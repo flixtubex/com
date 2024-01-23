@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Flixtube icon34.png" type="image/png">
+    <title>Watch Later List</title>
+    <style>
+        /* Your existing styles */
+    
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+    
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff; /* Customize the text color */
+        }
+    
+        #watchLaterListContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+    
+        .watch-later-thumbnail {
+            text-align: center;
+            background-color: #333; /* Customize the background color */
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    
+        .watch-later-thumbnail:hover {
+            background-color: #555; /* Customize the hover background color */
+        }
+    
+        .watch-later-thumbnail img {
+            width: 100%;
+            max-height: 150px; /* Customize the maximum height */
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    
+        .watch-later-thumbnail h3 {
+            margin: 0;
+            font-size: 14px;
+            color: #fff; /* Customize the text color */
+        }
+    
+        .watch-later-thumbnail button {
+            background-color: #ff4500; /* Customize the button background color */
+            color: #fff; /* Customize the button text color */
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    
+        .watch-later-thumbnail button:hover {
+            background-color: #e63900; /* Customize the hover button background color */
+        }
+    
+        #websiteIframeContainer {
+            margin-top: 20px;
+        }
+    
+        button {
+            background-color: #007bff; /* Customize the button background color */
+            color: #fff; /* Customize the button text color */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    
+        button:hover {
+            background-color: #0056b3; /* Customize the hover button background color */
+        }
+    </style>
+    
+    <style>
+        /* Your existing styles */
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Your existing styles */
+    </style>
+</head>
+<body>
+
+    <h1>Watch Later List</h1>
+
+    <div id="watchLaterListContainer"></div>
+    <div id="websiteIframeContainer"></div>
+    <button onclick="removeAllFromWatchLater()">Remove All</button>
+
+    <script>
+        function removeFromWatchLater(title) {
+            var watchLaterList = JSON.parse(localStorage.getItem('watchLater')) || [];
+            var updatedWatchLaterList = watchLaterList.filter(item => item.title !== title);
+
+            localStorage.setItem('watchLater', JSON.stringify(updatedWatchLaterList));
+            renderWatchLaterList(updatedWatchLaterList);
+            renderWebsiteIframe(null); // Clear iframe when an item is removed
+        }
+
+        function playWatchLaterThumbnail(url) {
+            renderWebsiteIframe(url);
+        }
+
+        function removeAllFromWatchLater() {
+            localStorage.removeItem('watchLater');
+            renderWatchLaterList([]);
+            renderWebsiteIframe(null); // Clear iframe when all items are removed
+        }
+
+        function renderWatchLaterList(watchLaterList) {
+            var watchLaterListContainer = document.getElementById('watchLaterListContainer');
+            watchLaterListContainer.innerHTML = '';
+
+            watchLaterList.forEach(function (item) {
+                var watchLaterThumbnail = document.createElement('div');
+                watchLaterThumbnail.className = 'watch-later-thumbnail';
+                watchLaterThumbnail.innerHTML = `
+                    <img src="${item.imageSrc}" alt="${item.title}" onclick="playWatchLaterThumbnail('${item.url}')">
+                    <h3>${item.title}</h3>
+                    <button onclick="removeFromWatchLater('${item.title}')">Remove</button>
+                `;
+                watchLaterListContainer.appendChild(watchLaterThumbnail);
+                
+               
+            });
+        }
+
+        function renderWebsiteIframe(url) {
+            var websiteIframeContainer = document.getElementById('websiteIframeContainer');
+            websiteIframeContainer.innerHTML = '';
+
+            if (url) {
+                var websiteIframe = document.createElement('iframe');
+                websiteIframe.src = url;
+                websiteIframe.width = '100%';
+                websiteIframe.height = '500px'; // Adjust the height as needed
+                websiteIframeContainer.appendChild(websiteIframe);
+            }
+        }
+
+        // Retrieve watch later list from localStorage
+        var watchLaterList = JSON.parse(localStorage.getItem('watchLater')) || [];
+
+        // Display watch later list on the page
+        renderWatchLaterList(watchLaterList);
+    </script>
+
+    <!-- Include your common scripts and stylesheets here -->
+
+</body>
+</html>

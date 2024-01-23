@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Flixtube icon34.png"  type="image/png">
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+
+<title>Flixtube</title>
+
+<style>
+      .watch-later-button{
+                position: absolute;
+                color: #e20000;
+                font-size: 19px;
+                margin-top:63%;
+                right: 10px;
+                width: 9px;
+             }
+             
+             .watch-later-button4{
+                position: absolute;
+                color: #e20000;
+                font-size: 19px;
+                margin-top:60%;
+                left: 7px;
+                width: 50px;
+                border-radius: 50%;
+             }   
+    /* Your existing styles */
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Add the following style to disable text selection on the entire page */
+    body {
+        user-select: none;
+    }
+
+    /* Your existing styles */
+
+    /* Add the following styles to disable text selection on specific elements */
+   
+
+    /* Your existing styles */
+</style>
+
+<script>
+    // Display the watch later list on the Watch Later page
+    watchLaterList.forEach(function (item) {
+        var watchLaterThumbnail = document.createElement('div');
+        watchLaterThumbnail.className = 'watch-later-thumbnail';
+        watchLaterThumbnail.innerHTML = `
+            <img src="${item.imageSrc}" alt="${item.title}" onclick="playWatchLaterThumbnail('${item.url}')">
+            <h3>${item.title}</h3>
+            <button onclick="removeFromWatchLater('${item.title}')">Remove</button>
+        `;
+        watchLaterListContainer.appendChild(watchLaterThumbnail);
+    });
+</script>
+
+<script>
+    function addToWatchLater(button) {
+        var title = button.parentNode.querySelector('h3').textContent.trim();
+        var imageSrc = button.parentNode.querySelector('img').src;
+        var url = button.parentNode.getAttribute('data-url');
+
+        // Check if the title is already in the watch later list
+        var watchLaterList = JSON.parse(localStorage.getItem('watchLater')) || [];
+        var exists = watchLaterList.some(item => item.title === title);
+
+        if (!exists) {
+            watchLaterList.push({ title: title, imageSrc: imageSrc, url: url });
+            localStorage.setItem('watchLater', JSON.stringify(watchLaterList));
+            alert('Added to Watch Later');
+        } else {
+            alert('This movie is already in Watch Later');
+        }
+    }
+</script>
+
+
+</head>
+
+
+
+    
+<body>
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+    
+   
+   
+   
+    <main>
+       
+        <style>
+           
+            #image-container {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 50%;
+                background: rgba(0, 0, 0, 0.8);
+                z-index: 9999;
+            }
+    
+            #closing-button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                cursor: pointer;
+                color: #fff;
+            }
+    
+            #auto-play-image {
+                display: block;
+                margin: auto;
+                max-width: 100%;
+                max-height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <!-- Your main content goes here -->
+    
+   
+    
+           
+        </div>
+      
+     
+        <style>
+            #content {
+              display: none;
+        
+              
+            }
+            button   {
+            padding: 0.0.0.0.0px;
+          background-color: #00000000;
+          border-top-color: #00000000;
+          border-left-color: #00000000;
+          border-bottom-color: #00000000;
+          border-right-color: #00000000;
+          border-left: 0px;
+           }
+       </style>
+
+
+
+
+
+<script>
+    function showContent() {
+      var content = document.getElementById('content');
+      content.style.display = 'block';
+    }
+      function  hideContent() {
+      var content = document.getElementById('content');
+      content.style.display = 'none';
+    }
+  </script>
+        </head>
+        <style>
+      
+      
+        </style>
+        
+        
+          
+       
+                  
+                
+    </main> 
+
+    <amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-5318471727991861">
+</amp-auto-ads>
+
+
+  
+
+</div> 
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5318471727991861"
+ crossorigin="anonymous"></script>
+
+
+ <div class="thumbnails">
+    <div class="thumbnai4"> 
+    </div> 
+
+       
+    <div class="thumbnails">
+        <div class="thumbnail" data-category="hr" data-url="play1.html">
+            <img class="sm" src="games-top-resident-evil.jpg" alt="Website 1" onclick="loadWebsite('play1.html'); showContent(); hideContent2();" title="Watch ">
+            <h3>The nun 2</h3>
+            <img class="watch-later-button4" src="Flixtube icon3.png" >
+            <img class="watch-later-button" onclick="addToWatchLater(this)" src="Untitled.png" >
+            
+        </div>
+       
+    </div>
+    
+    
+        
+        
+   
+     
+
+
+      <div class="thumbnails">
+      <div class="thumbnail" data-category="bd">
+        <img class="sm"  src="games-top-resident-evil.jpg" alt="Website 1" onclick="loadWebsite('https://hypothesis-road-i-258.site/play/tt14993250?autoplay=1'); showContent(); hideContent2();" title="Watch ">
+        <h3>Rocky Aur Rani Kii Prem Kahaani </h3>
+    </div>
+</div>
+ 
+
+<div class="thumbnails">
+    <div class="thumbnail" data-category="bd">
+    <img class="sm" src="games-top-resident-evil.jpg" alt="Website 1" onclick="loadWebsite('https://hypothesis-road-i-258.site/play/tt15354916?autoplay=1'); showContent(); hideContent2();" title="Watch ">
+        <h3>Jawan</h3>
+    </div> 
+    
+  </div>
+
+  <div class="thumbnails">
+  <div class="thumbnail" data-category="bd">
+  <img class="sm" src="games-top-resident-evil.jpg" alt="Website 1" onclick="loadWebsite('https://hypothesis-road-i-258.site/play/tt14993250?autoplay=1'); showContent(); hideContent2();" title="Watch ">
+    <h3>Rocky Aur Rani Kii Prem Kahaani </h3>
+</div>
+</div>
+<div class="thumbnails">
+<div class="thumbnail" data-category="hr">
+ <img class="sm" src="games-top-resident-evil.jpg" alt="Website 1" onclick="loadWebsite('https://hurl-party-i-256.site/play/ftt10160976?autoplay=1'); showContent(); hideContent2();" title="Watch "> 
+    <h3>The nun 2</h3>
+</div> 
+</div>
+
+
+
+<div class="thumbnails">
+<div class="thumbnail" data-category="bd">
+ <img class="sm" src="games-top-resident-evil.jpg" alt="Website 1" onclick="loadWebsite('https://hypothesis-road-i-258.site/play/tt15354916?autoplay=1'); showContent(); hideContent2();" title="Watch ">
+    <h3>Jawan</h3>
+</div> 
+
+</div>
+
+<div class="thumbnails">
+<div class="thumbnail" data-category="bd">
+<img  class="sm" src="games-top-resident-evil.jpg" alt="Website 1" onclick="loadWebsite('https://hypothesis-road-i-258.site/play/tt14993250?autoplay=1'); showContent(); hideContent2();" title="Watch "> 
+<h3>Rocky Aur Rani Kii Prem Kahaani </h3>
+</div>
+
+
+
+
+<div class="thumbnails">
+<div class="thumbnai"> 
+</div> 
+
+
+
+    <script>
+        // Your existing script.js content
+
+        function filterCategory(category) {
+            var thumbnails = document.querySelectorAll('.thumbnail');
+
+            thumbnails.forEach(function(thumbnail) {
+                if (category === 'all' || thumbnail.dataset.category === category) {
+                    thumbnail.style.display = 'block';
+                } else {
+                    thumbnail.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <script src="script.js"></script>
+
+    <style>
+
+
+    
+
+        .navbar2 {
+            background-color: #000000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-top: 1px solid #443f3f;
+          height: 49px;
+          border-bottom: 1px solid #443f3f;
+         
+        }
+
+        .navbar22 {
+            background-color: #000000;
+            position: fixed;
+           bottom: 0;
+            left: 0;
+            width: 100%;
+            border-top: 1px solid #443f3f;
+          height: 90px;
+          border-bottom: 1px solid #443f3f;
+         
+        }
+      
+      
+       
+   
+    </style>
+
+    <style>
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+           
+        }
+
+        .navbar {
+            background-color: #000000;
+            position: fixed;
+          bottom: 0;
+            left: 0;
+            width: 100%;
+            border-top: 1px solid #443f3f;
+            
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .navbar li {
+            margin: 4px;
+            cursor: pointer;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+           
+        }
+     
+    </style>
+   
+   
+</head>
+<style>
+    #content2 {
+      display: none;
+      bottom: 30px;
+      position: fixed;
+    }
+  
+
+  </style>
+  <script>
+ function hideContent2() {
+      var content = document.getElementById('content2');
+      content.style.display = 'none';
+    }
+
+    function showContent2() {
+      var content = document.getElementById('content2');
+      content.style.display = 'block';
+    }
+ 
+
+  </script>
+    <style>
+        .q2 img {
+     width: 100%;
+     height: 50px;
+    position: fixed;
+    cursor: pointer;
+  bottom: 54px;
+  margin-left: 11px;
+
+   border-right: 1.5px solid #ffffff;
+   
+        }
+ 
+  
+        .q11 img {
+     width: 16px;
+     height: 16px;
+    position: fixed;
+    cursor: pointer;
+   bottom: 70px;
+     margin-left: 91%;
+        }
+      
+    </style>
+</head>
+<body>
+ 
+  
+    
+    <div id="content2">
+      <p class="navbar22">  
+              
+            <div class="q2">
+                <button  onclick="hideContent2()"><img src="m.png" onclick="showContent()" >click</button>
+                
+              </div>       
+               
+           
+          
+           <div class="q11">
+            <button onclick="hideContent2()"><img src="Untitle2.png" alt="Website 1" onclick="loadWebsite('Home.html')" title="Watch "></button>
+        </div>     
+
+       
+    </p>
+    </div>
+    
+    
+
+
+
+  
+
+
+
+    
+
+    <header>
+          
+       
+         <div class="logo">
+            <!-- Add your logo here -->
+             <a><img src="Flixtube icon.png"   ></a>
+        </div>
+        
+        <div class="search-bar">
+            <!-- Add your search bar here -->
+            <input type="text" placeholder="Search...">
+            <button><img src="download1.png" height="14px"  ></button>
+             
+         </div>
+     
+        
+
+
+     <div class="category">               
+        <ul>         
+            <li><a><button class="category-button" onclick="filterCategory('all')">All</button> </a></li>
+                <li><a><button class="category-button" onclick="filterCategory('hd')">Hollywood</button> </a></li>
+                <li><a><button class="category-button" onclick="filterCategory('bd')">Bollywood</button></a></li> 
+                  <li><a><button  class="category-button" onclick="filterCategory('td')">Tollywood</button></a></li> 
+                        <li><a><button class="category-button" onclick="filterCategory('hr')">Horror</button></a></li>   
+       
+      </ul>    
+       </div>
+    
+      <!-- Add more category buttons as needed --> 
+    </div>
+       
+    <style>
+        body {
+       margin: 0;
+       padding: 0;
+       font-family: Arial, sans-serif;
+       
+    }
+       /* Your existing styles */
+       /* Add styles for category buttons */
+       .category-button {
+           cursor: pointer;
+           background-color: #000000;
+           color: white;
+           padding: 10px;
+           border: none;
+           border-radius: 50px;
+           outline: none; /* Remove default outline */
+           border-bottom: 0.5px solid #fff; /* Add bottom outline with white color */
+          
+       }
+      
+       .category ul { 
+    
+           list-style-type: none;
+           padding: 0;
+           margin: 0;
+           display: flex;
+           justify-content: space-around;
+    
+       }
+     
+     
+    
+       .category a {
+           text-decoration: none;
+           color: #fff;
+          
+       }
+       .category {
+           background-color: #00000000;
+        position: fixed; 
+         margin-top: 88px;
+           left: 0;
+           width: 100%;
+         
+         
+       }
+    
+    </style>
+    
+
+
+
+     </header>
+     
+    <h5>
+
+
+       
+        
+              
+            <body>
+               
+                   
+
+
+
+
+
+
+                <div class="navbar2">
+                    <header>
+                        <div class="logo">
+                            <!-- Add your logo here -->
+                             <a><img src="Flixtube icon.png"   ></a>
+                        </div>
+
+                       
+                </header>
+                <div id="content">
+                    <div class="website-container">
+                        <iframe id="website-iframe" src=""   margin-left="10.7%" 
+                        frameborder="0" allowfullscreen="allowfullscreen" ></iframe>
+                    </div>
+
+
+                    <div class="q1">
+                        <button  onclick="hideContent()"><img src="Untitle1.png" onclick="showContent2()" ></button>
+                       
+                      </div>       
+                       
+                    
+                 </body>
+        
+              
+                    
+                  </div>  
+        
+    </h5>
+
+
+
+
+
+    <body>
+       
+        <div class="navbar">
+            <ul>
+                <li><a><img src="Untitle122.png" width="28px" >  </a></li>
+                <li class="23"><a href="Game.html"><img src="2.png" width="68px" height="38px" ></a></li>
+                <li><a href="watchlater.html"><img src="1.png" width="28px" ></a></li>
+            </ul>
+          </div>
+        </body>
+    </body> 
+  </body>
+</html>  
+
+
+
+

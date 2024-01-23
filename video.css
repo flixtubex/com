@@ -1,0 +1,683 @@
+
+
+/* Add styles for the logo and search bar in the header */
+header {
+    top: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%; 
+    height: 30px;
+    border-bottom: 1px solid #443f3f;
+}
+
+header .logo img {
+    width: 132px;
+height: 27px;
+margin-top: 0px;
+   
+}
+
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+   
+    margin-right: 10px;
+    height: 16px;
+    
+}
+
+.search-bar button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+  
+    height: 24px;
+}
+
+/* Add styles for the left sidebar */
+.left-sidebar {
+    padding: 20px;
+    background-color: #000000f6;
+    color: white;
+    position: fixed;
+    width: 2%; 
+    height: 100%;
+    margin-top: 49px;
+}
+
+/* Add any additional styles as needed */
+
+/* Add styles for the titles */
+.thumbnail h3 {
+    font-size: 14px;  
+}
+
+/* Add styles for the download buttons and icon */
+.download-button {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000f6;
+    color: rgb(255, 255, 255) ;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+}
+
+.thumbnails {
+    width: 394px;
+
+   
+}
+
+.thumbnail {
+    cursor: pointer;
+    text-align: center;
+    
+    position: center;
+    
+
+    
+}
+
+.thumbnail img {
+    width: 100%;
+   
+}
+
+.thumbnails1 {
+   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnail1 {
+    cursor: pointer;
+    
+    width: flex;
+    position: center;
+    margin-left: 5px; 
+
+    }
+
+
+ 
+
+    #website-iframe {
+        width: 100%;
+        height: 25%;
+        border: none;
+       position: fixed;
+       margin-top: 34px;
+    }
+    
+
+
+
+
+
+
+/* Set a dark background color for the body and header */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(0, 0, 0)000;
+  
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the logo and search bar in the header */
+.header .logo img {
+    height: 23px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 156px;
+    
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 206.5px;
+    margin-right: 10px;
+    height: 16px;
+    background-color: #333; /* Darker input background */
+    color: #fff; /* Light text color */
+}
+
+.search-bar button {
+    background-color: #333; /* Dark button background */
+    color: #ffffff; /* Light button text color */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 180px;
+    height: 24px;
+}
+
+/* Style the left sidebar */
+.left-sidebar {
+    padding: 20px;
+    background-color: #000000; /* Dark sidebar background */
+    color: #fff;
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    margin-top: 49px;
+}
+
+/* Style the thumbnails and titles */
+.thumbnail {
+    cursor: pointer;
+    text-align: center;
+    background-color: #000000; /* Dark thumbnail background */
+    color: #fff3f3; /* Light text color */
+    top: 30%;
+    padding: 1px;
+    border-radius: 7px;
+    position: fixed;
+    width: 100%;
+    border-top: 2px solid #8b8b8bc9;
+    border-bottom: 1.5px solid #ffffff;
+    height: 5%;
+}
+.thumbnair {
+    cursor: pointer;
+    text-align: center;
+    background-color: #000000; /* Dark thumbnail background */
+    color: #fff3f3; /* Light text color */
+    top: 36%;
+    padding: 1px;
+    border-radius: 7px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1.5px solid #ffffff;
+    height: 55px;
+}
+
+
+.thumbnailt {
+    cursor: pointer;
+    
+   
+   right: 25px;
+    top: 36.5%;
+   
+    
+    position: fixed;
+   
+   
+}
+
+.thumbnailtl {
+    cursor: pointer;
+    
+   
+   right: 150px;
+    top: 36.69%;
+   
+    
+    position: fixed;
+   
+   
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 200px;
+}
+
+
+
+/* Add more styles for other elements as needed */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#image-container {
+    display: none;
+  
+ 
+  
+    
+  
+    z-index: 9999;
+    width: 100%;
+
+
+
+margin-top: 33px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the thumbnails and titles */
+.thumbnai {
+    cursor: pointer;
+    text-align: center;
+    background-color:#00000000; /* Dark thumbnail background */
+    color: #000000; /* Light text color */
+    margin-top: 16px;
+    padding: 1px;
+    border-radius: 7px;
+}
+
+   
+
+
+.thumbnai {
+    cursor: pointer;
+    text-align: center;
+    height: 19px;
+    position: center;
+}
+
+
+
+
+
+.thumbnail-content {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the thumbnails and titles */
+.thumbnai {
+    cursor: pointer;
+    text-align: center;
+    background-color:#00000000; /* Dark thumbnail background */
+    color: #000000; /* Light text color */
+    margin-top: 16px;
+    padding: 1px;
+    border-radius: 7px;
+}
+
+   
+.thumbnai4 {
+    cursor: pointer;
+    text-align: center;
+    background-color:#00000000; /* Dark thumbnail background */
+    color: #000000; /* Light text color */
+    margin-top: 16px;
+    padding: 1px;
+    cursor: pointer;
+    text-align: center;
+    height: 52px;
+    position: center;
+    border-radius: 7px;
+}
+
+
+
+
+
+
+.thumbnail-content {
+    position: relative;
+}
+
+
+
+
+
+.q1 img {
+    width: 38px;
+    height: 26px;
+   position: fixed;
+   cursor: pointer;
+  top: 11px;
+   right: 0px;
+       }
+
+       .m img {
+           width: 50px;
+    height: 50px;
+   cursor: pointer;
+   margin-right: 331px;
+ border-radius: 100%;
+
+       }
+
+
+
+       
+       
+       .circle-title {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           width: 55px;
+           height: 50px;
+           border-radius: 50%;
+           margin-left: 9px;
+        
+       }
+
+       .circle-title img {
+           width: 100%;
+           height: 100%;
+           border-radius: 50%;
+       }
+      
+
+       .copy-link  {
+           background-color: #000000;
+           color: white;
+           border: none;
+          
+           border-radius: 25px;
+           cursor: pointer;
+           width: 13px;
+           height: 40px;
+           border-bottom: 1.5px solid #ffffff;
+           border-top: 1.5px solid #ffffff;
+           border-left: 1.5px solid #ffffff; 
+           border-right: 1.5px solid #ffffff;
+           
+       }
+       .copy-link-button-2 {
+        font-size: 21px;  
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 10px;
+        border-radius: 25px;
+        cursor: pointer;
+        width: 112%;
+        height: 100;
+        border-bottom: 1.5px solid #ffffff;
+        border-top: 1.5px solid #ffffff;
+        border-left: 1.5px solid #ffffff; 
+        border-right: 1.5px solid #ffffff;
+    }
+    .copy-link-button-2c {
+        font-size: 21px;  
+        background-color: #000000;
+       
+        color:rgb(255, 255, 255);
+        border: none;
+       
+        border-radius: 25px;
+        cursor: pointer;
+        width: 0px;
+        height: 0px;
+       
+    }
+    .copy-link-button-2c3 {
+        font-size: 13px;  
+        background-color: #000000;
+     
+        color:rgb(182, 182, 182);
+        border: none;
+       
+        border-radius: 25px;
+        cursor: pointer;
+      
+       
+    }
+    .thumbnailtc3 {
+        cursor: pointer;
+        
+       
+      
+        top: 39.5%;
+        margin-left: 67px;
+        
+        position: fixed;
+       
+       
+    }
+    .thumbnailtc {
+        cursor: pointer;
+        
+       
+      
+        top: 36.5%;
+       margin-left: 67px;
+        
+        position: fixed;
+       
+       
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+       
+    }
+    
+    .navbar {
+        background-color: #000000;
+        position: fixed;
+      bottom: 0;
+        left: 0;
+        width: 100%;
+        border-top: 1px solid #443f3f;
+        
+    }
+    
+    .navbar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+    
+    }
+    
+    .navbar li {
+        margin: 4px;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        color: #fff;
+       
+    }
+
+  
+  
+
+ 
+    .thumbnaill {
+      
+        
+       
+        position: fixed;
+        width: 100%;
+       
+       
+    }
+    .thumbnaill img {
+      
+    
+            width: 100%;
+            height: 25%;
+            border: none;
+           position: fixed;
+          
+     
+        
+    
+    }
+    #countdown-container {
+        font-size: 23px;
+        font-family: 'Arial', sans-serif;
+       
+        text-align: left;
+       
+       position: fixed;
+     
+      -webkit-text-fill-color: aliceblue;
+    }
+    .oto button{
+        background-color: #000000;
+      width: 120px;
+      right: 0px;
+      height: 48px;
+      bottom: 73.9%;
+      border-bottom: 1.5px solid #ffffff;
+           border-top: 1.5px solid #ffffff;
+           border-left: 1.5px solid #ffffff; 
+           border-right: 1.5px solid #ffffff;
+           border-top-left-radius: 9px;
+           border-bottom-left-radius: 9px;
+      }
+        .oto h4{
+         font-size: 17px;
+            position: fixed;
+right: 6px ;
+bottom: 73%;  
+        }
+
+
+
+
+        .options-content {
+            border-bottom: 1.5px solid #ffffff;
+            border-top: 1.5px solid #ffffff;
+            border-left: 1.5px solid #ffffff; 
+            border-right: 1.5px solid #ffffff;
+            display: none;
+            position: absolute;
+            background-color: #000000;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            position: fixed;
+            top: 35.49%;
+            width: 170px;
+            height: auto;
+           right: 0px;
+          }
+      
+          .options-content img {
+            color: #000000;
+            display: block;
+            width: 120px;
+            
+            text-align: left;
+            border: none;
+            background: none;
+            cursor: pointer;
+           
+            border-bottom: 1.5px solid #000000;
+            border-top: 1.5px solid #000000;
+            border-left: 1.5px solid #000000; 
+            border-right: 1.5px solid #000000;
+            border-radius: 32px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 27px;
+           
+          }
+      
+          .mjstyle {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0);
+            position: fixed;
+          } 
+    
