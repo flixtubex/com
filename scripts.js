@@ -19,7 +19,7 @@ function closeImage() {
 
 // Set timeouts for showing and closing the image
 setTimeout(showImage, 0); // Show after 10 seconds
-setTimeout(closeImage, 2); // Close after 21 seconds
+setTimeout(closeImage, 38000); // Close after 21 seconds
 
 
  // Function to update and display the reversed countdown
@@ -29,7 +29,7 @@ setTimeout(closeImage, 2); // Close after 21 seconds
 
 // Function to start the countdown
 function startCountdown() {
-    let seconds = ;
+    let seconds = 32;
 
     // Update the countdown every second
     const countdownInterval = setInterval(function () {
@@ -40,7 +40,7 @@ function startCountdown() {
         if (seconds < 0) {
             clearInterval(countdownInterval);
         }
-    }, 900);
+    }, 1000);
 }
 
 // Start the countdown after the page loads
