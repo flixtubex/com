@@ -1,4 +1,4 @@
-function copyPageLink() {
+ copyPageLink() {
     var copyText = window.location.href;
     navigator.clipboard.writeText(copyText).then(function() {
         alert('Video share link copied to clipboard!');
